@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.title{
+  text-align: center;
+}
+.fullcalendar{
+  min-width: 500px;
+  min-height: 500px;
+  max-width: 800px;
+  max-height: 800px;
+}
+@media screen  {
+  
+}

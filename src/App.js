@@ -1,12 +1,35 @@
-import { Card } from 'primereact/card';
-import './App.css';
 
+// import { Card } from 'primereact/card';
+import {Dialog} from '@fullcalendar/core';
+import './App.css';
+import { FullCalendar } from "primereact/fullcalendar";
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";                                //icons
 
+
+import {Calendar} from '@fullcalendar/core';
+import dayGridPlugin from "@fullcalendar/daygrid";
+import  timeGridPlugin from '@fullcalendar/timegrid';
+import interactionPlugin from '@fullcalendar/interaction';
+
 function App() {
-  const event =[
+  const options = {
+    plugins: [dayGridPlugin, timeGridPlugin,
+    interactionPlugin],
+    defaultView: 'dayGridMonth',
+    defaultDate: new Date(),
+    header:{
+      left:'prev,next',
+      center:'title',
+      right:'dayGridMonth, timeGridWeek, timeGridDay'
+    },
+    editable: false,
+    dateClick: (e) => {
+
+    }
+  };
+  const events =[
     {
       type: "TwitterSpace", //Live Stream
       location: {
@@ -17,12 +40,12 @@ function App() {
       url: "http://eddiehub.org",
       author: "PTVignesh",
       host: "Nick",
-      title: "All Day Event very long title",
+      title: "this link share to hello@pamper.com",
 
-      date:{
-        start: "2019-01-01",
-        end: "2019-01-02",
-     },
+      
+        start: "2022-03-07T17:00:00",
+        end: "2022-03-07T19:00:00",
+  
 
     time: {
        start: "0800",
@@ -37,16 +60,16 @@ function App() {
   return (
     <div>
       <header> 
-         <h1>Event Calendar</h1>
+         <h1 className='title'>Event Calendar</h1>
       </header>
-
-      {event.map( (event) => ( 
+        <FullCalendar className='fullcalendar' events={events} options={options} />
+      {/* {events.map( (event) => ( 
          
         <Card title={event.title} subTitle={event.date.start}>
              {event.description}
         </Card> 
         ) )
-        }
+        } */}
     </div>
   );
 }
