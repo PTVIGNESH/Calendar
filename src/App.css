@@ -28,11 +28,30 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.menubar{
+  margin-top: 70px;
+}
+
+
+.title{
+  color: crimson;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.fullcalendar{
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 800px;
+  max-height: 800px;
+  margin-left: 20px;
+  
+  color: rgb(2, 207, 235);
+  cursor: pointer;
+  border-radius: 10px;
+  border: 7px solid #282c34;
+  
+
 }
