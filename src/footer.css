@@ -1,0 +1,75 @@
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  .icon{
+      margin-top: 200px;
+      margin-left: 400px;
+      font-size: 30px;
+      color: #2a00e6;
+}
+
+.footer{
+    
+    background-color: #f6fafa;
+    
+    width: 100vw;
+    font-family: "Open Sans";
+    padding: 40px;
+    color: #fff;
+    
+    bottom: 0;
+    left: 0;
+}
+.footer div{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 90px;
+    display: flex;
+    font-size :1.6rem; 
+    cursor: pointer;
+    
+}
+.github{
+    color: aquamarine;
+    padding-left: 10px;
+}
+.linkedin{
+    padding-left: 10px;
+    color: #3f0cf8;
+}
+.facebook{
+    padding-left: 10px;
+    color: rgb(4, 191, 238);
+}
+.linkedin:hover{
+    color: rgb(6, 116, 243);
+}
+.facebook:hover{
+    color: rgb(44, 10, 240);
+}
+.github:hover{
+    color: rgb(97, 83, 52);
+}
+.footer p{
+    color: rgb(243, 73, 6);
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    opacity: .9;
+    cursor: pointer;
+
+}
+.footer p:hover{
+    color: rgba(11, 221, 106, 0.986);
+}
