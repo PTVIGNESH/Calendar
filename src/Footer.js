@@ -10,8 +10,7 @@ function Footer() {
   return (
     <div className="footer">
     
-    
-    
+main
        <div className="content">
          <FontAwesomeIcon className="facebook" icon={ faFacebookF} />
          <FontAwesomeIcon className="github" icon={ faGithub} />
