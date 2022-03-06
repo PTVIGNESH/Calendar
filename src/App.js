@@ -1,13 +1,12 @@
-
-// import { Card } from 'primereact/card';
-import {Dialog} from '@fullcalendar/core';
+import Home from './Home';
 import './App.css';
 import { FullCalendar } from "primereact/fullcalendar";
 import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
 import "primereact/resources/primereact.min.css";                  //core css
 import "primeicons/primeicons.css";                                //icons
 
-
+import {Menubar} from 'primereact/menubar';
+import {InputText} from 'primereact/inputtext';
 import {Calendar} from '@fullcalendar/core';
 import dayGridPlugin from "@fullcalendar/daygrid";
 import  timeGridPlugin from '@fullcalendar/timegrid';
@@ -59,17 +58,18 @@ function App() {
   ]
   return (
     <div>
+
+     <Home />
       <header> 
+         <Menubar start=
+                   {
+                   <InputText placeholder="Search" 
+            type="text" />
+            } />
          <h1 className='title'>Event Calendar</h1>
       </header>
         <FullCalendar className='fullcalendar' events={events} options={options} />
-      {/* {events.map( (event) => ( 
-         
-        <Card title={event.title} subTitle={event.date.start}>
-             {event.description}
-        </Card> 
-        ) )
-        } */}
+        
     </div>
   );
 }

@@ -41,8 +41,8 @@
   text-align: center;
 }
 .fullcalendar{
-  min-width: 500px;
-  min-height: 500px;
+  min-width: 400px;
+  min-height: 400px;
   max-width: 800px;
   max-height: 800px;
 }
